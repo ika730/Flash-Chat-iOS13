@@ -18,5 +18,13 @@ class WelcomeViewController: UIViewController {
        
     }
     
-
+    @IBAction func registerButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "initialToRegister", sender: nil)
+    }
+    
+    @IBAction func loginButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "initialToLogin", sender: nil)
+        
+    }
+    
 }
