@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="87" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Flash_Chat_iOS13" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Tu-HQ-MXy">
+                        <rect key="frame" x="10.000000000000014" y="10" width="251.33333333333337" height="67"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxE-R7-1Cd">
+                                <rect key="frame" x="10.000000000000014" y="20" width="241.33333333333337" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="BrandPurple"/>
+                        <constraints>
+                            <constraint firstItem="QxE-R7-1Cd" firstAttribute="top" secondItem="5Tu-HQ-MXy" secondAttribute="top" constant="20" id="FZh-ow-frK"/>
+                            <constraint firstAttribute="bottom" secondItem="QxE-R7-1Cd" secondAttribute="bottom" constant="20" id="bPX-AY-1Wa"/>
+                            <constraint firstAttribute="trailing" secondItem="QxE-R7-1Cd" secondAttribute="trailing" id="hOJ-El-nuT"/>
+                            <constraint firstItem="QxE-R7-1Cd" firstAttribute="leading" secondItem="5Tu-HQ-MXy" secondAttribute="leading" constant="10" id="yb5-tU-cmi"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="Xhm-VW-rFf">
+                        <rect key="frame" x="292" y="18.666666666666671" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="8AZ-Vh-NDe"/>
+                            <constraint firstAttribute="height" constant="50" id="sTJ-9N-Rts"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5Tu-HQ-MXy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4ol-JM-c76"/>
+                    <constraint firstItem="5Tu-HQ-MXy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Gfn-Q0-6R4"/>
+                    <constraint firstAttribute="bottom" secondItem="5Tu-HQ-MXy" secondAttribute="bottom" constant="10" id="IAR-pz-vqq"/>
+                    <constraint firstItem="Xhm-VW-rFf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PIU-GP-WgS"/>
+                    <constraint firstAttribute="width" secondItem="5Tu-HQ-MXy" secondAttribute="width" multiplier="1.4" id="Wq8-HU-S94"/>
+                    <constraint firstAttribute="trailing" secondItem="Xhm-VW-rFf" secondAttribute="trailing" constant="10" id="tEX-qb-dLS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="label" destination="QxE-R7-1Cd" id="zox-bW-M49"/>
+                <outlet property="messageBubble" destination="5Tu-HQ-MXy" id="7iP-Ol-61a"/>
+                <outlet property="rightImageView" destination="Xhm-VW-rFf" id="2fb-Ox-GB5"/>
+            </connections>
+            <point key="canvasLocation" x="1157.2519083969464" y="-663.0281690140846"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="MeAvatar" width="36" height="36"/>
+        <namedColor name="BrandPurple">
+            <color red="0.67500001192092896" green="0.43500000238418579" blue="0.9179999828338623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

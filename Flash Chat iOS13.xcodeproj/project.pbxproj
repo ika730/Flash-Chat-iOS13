@@ -12,6 +12,8 @@
 		06ECCBAF2A4D37DF0075BD86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06ECCBAE2A4D37DF0075BD86 /* GoogleService-Info.plist */; };
 		06ECCBB12A4D623F0075BD86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ECCBB02A4D623F0075BD86 /* Constants.swift */; };
 		06ECCBB32A4D699E0075BD86 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ECCBB22A4D699E0075BD86 /* Message.swift */; };
+		06ECCBBA2A4D77080075BD86 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ECCBB82A4D77080075BD86 /* MessageCell.swift */; };
+		06ECCBBB2A4D77080075BD86 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06ECCBB92A4D77080075BD86 /* MessageCell.xib */; };
 		0B628177235DEE8100E35CAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B628176235DEE8100E35CAF /* AppDelegate.swift */; };
 		0B628179235DEE8100E35CAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B628178235DEE8100E35CAF /* SceneDelegate.swift */; };
 		0B62817E235DEE8100E35CAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B62817C235DEE8100E35CAF /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 		06ECCBAE2A4D37DF0075BD86 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		06ECCBB02A4D623F0075BD86 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		06ECCBB22A4D699E0075BD86 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = "Flash Chat iOS13/Message.swift"; sourceTree = SOURCE_ROOT; };
+		06ECCBB82A4D77080075BD86 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		06ECCBB92A4D77080075BD86 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		0B628173235DEE8100E35CAF /* Flash Chat iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash Chat iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B628176235DEE8100E35CAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B628178235DEE8100E35CAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				0B62817C235DEE8100E35CAF /* Main.storyboard */,
+				06ECCBB82A4D77080075BD86 /* MessageCell.swift */,
+				06ECCBB92A4D77080075BD86 /* MessageCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06ECCBAF2A4D37DF0075BD86 /* GoogleService-Info.plist in Resources */,
+				06ECCBBB2A4D77080075BD86 /* MessageCell.xib in Resources */,
 				0B628183235DEE8400E35CAF /* LaunchScreen.storyboard in Resources */,
 				0B628180235DEE8400E35CAF /* Assets.xcassets in Resources */,
 				0B62819E235F0F4D00E35CAF /* README.md in Resources */,
@@ -205,6 +212,7 @@
 				06ECCBB32A4D699E0075BD86 /* Message.swift in Sources */,
 				0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */,
 				0B62818D235DF00B00E35CAF /* RegisterViewController.swift in Sources */,
+				06ECCBBA2A4D77080075BD86 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
