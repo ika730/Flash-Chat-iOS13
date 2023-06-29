@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>894010808166-nq9kg3s4cdofgv6sq7bh0qfnnpei0ei3.apps.googleusercontent.com</string>
+	<string>49496621599-00ccfa4o8vlmgc6q854t1a5qotljjja6.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.894010808166-nq9kg3s4cdofgv6sq7bh0qfnnpei0ei3</string>
+	<string>com.googleusercontent.apps.49496621599-00ccfa4o8vlmgc6q854t1a5qotljjja6</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDH2Y1O0G_EO7TupxH1qaE3_qKvJpzTcIQ</string>
+	<string>AIzaSyADN5ob5IVdab_xI6KIXCQkSDE0IRWnZWQ</string>
 	<key>GCM_SENDER_ID</key>
-	<string>894010808166</string>
+	<string>49496621599</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>co.ika.Flash-Chat-iOS13</string>
 	<key>PROJECT_ID</key>
-	<string>flashchat-6dd23</string>
+	<string>flashchat-ed3dd</string>
 	<key>STORAGE_BUCKET</key>
-	<string>flashchat-6dd23.appspot.com</string>
+	<string>flashchat-ed3dd.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:894010808166:ios:a41f22b6cda0ad779e1aa7</string>
+	<string>1:49496621599:ios:6549dec9428d1ba4d54b2a</string>
 </dict>
 </plist>
