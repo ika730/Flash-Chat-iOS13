@@ -15,9 +15,6 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var messageTextfield: UITextField!
     let db = Firestore.firestore()
     var messages: [Message] = [
-        Message(sender: "1@2.com", body: "Hey!"),
-        Message(sender: "a@b.com", body: "Hello!"),
-        Message(sender: "1@2.com", body: "What's up?"),
     ]
     
     override func viewDidLoad() {
@@ -28,8 +25,9 @@ class ChatViewController: UIViewController {
         navigationItem.hidesBackButton = true
         //navigationのタイトルを設定
         title = K.appName
-        
+
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
+        loadMessages()
         
 
     }
@@ -59,6 +57,31 @@ class ChatViewController: UIViewController {
           print("Error signing out: %@", signOutError)
         }
         
+    }
+    
+    func loadMessages(){
+        messages = []
+        db.collection(K.FStore.collectionName).getDocuments { querySnapshot, error in
+            if let e = error{
+                print("There was an issue retrieving data from Firestore.\(e)")
+            }else{
+                if let snapshotDocuments = querySnapshot?.documents{
+                    for doc in snapshotDocuments{
+                        let data = doc.data()
+                        if let messagSender = data[K.FStore.senderField] as? String,let messageBody = data[K.FStore.bodyField] as? String{
+                            let newMessage = Message(sender: messagSender, body: messageBody)
+                            self.messages.append(newMessage)
+                            
+                            DispatchQueue.main.async {
+                                self.tableView.reloadData()
+                            }
+                           
+                        }
+                        
+                    }
+                }
+            }
+        }
     }
     
 }
